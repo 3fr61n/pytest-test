@@ -26,7 +26,8 @@ before_script:
 
 script:
   #- if [[ $TRAVIS_PYTHON_VERSION == '2.7' ]]; then tox -e py27; fi
-  - if [[ $TRAVIS_PYTHON_VERSION == '3.5' ]]; then curl http://localhost; fi
+  #- if [[ $TRAVIS_PYTHON_VERSION == '3.5' ]]; then curl http://localhost; fi
+  - curl http://127.0.0.1
 
 after_script:
   # Always leave a clean slate.
