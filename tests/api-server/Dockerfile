@@ -1,3 +1,3 @@
-FROM python:3-onbuild  
+FROM tiangolo/uwsgi-nginx-flask:python3.7
 
-RUN pip install flask
+COPY ./app /app

@@ -38,12 +38,12 @@ after_script:
 #after_success:
 #  - coveralls
 
-notifications:
-  email:
-    recipients:
-      - efrain.gonzalez@gmail.com
-    on_success: always # default: change
-    on_failure: always # default: always
+#notifications:
+#  email:
+#    recipients:
+#      - efrain.gonzalez@gmail.com
+#    on_success: always # default: change
+#    on_failure: always # default: always
 
 
 
