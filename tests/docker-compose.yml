@@ -4,7 +4,7 @@ services:
   api-server:
     build: ./api-server  # path is relative to docker-compose.yml localtion
     volumes:
-      - ./api-server:/app
+      - ./api-server/flask_mock_simple_service.py:/app/flask_mock_simple_service.py
     ports:
       - 5000:80  # host:container   
     command: ["python", "/app/flask_mock_simple_service.py"]
