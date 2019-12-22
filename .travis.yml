@@ -17,6 +17,7 @@ before_install:
 
 install:
   - pip install -U pytest
+  - pip install requests
 
 before_script:
   # Pre-cache images to prevent timeout in service availability checks.
