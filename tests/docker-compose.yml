@@ -1,0 +1,7 @@
+version: '3'
+services:
+  hello:
+    image: nginxdemos/hello:plain-text
+    ports:
+      - 80:80
+   
