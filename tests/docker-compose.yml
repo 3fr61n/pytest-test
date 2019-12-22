@@ -7,3 +7,4 @@ services:
       - ./api-server:/app
     ports:
       - 5000:80  # host:container   
+    command: ["python", "/app/flask_mock_simple_service.py"]
