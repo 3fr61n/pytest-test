@@ -1,7 +1,9 @@
 version: '3'
 services:
 
-  observatory-service:
+  api-server:
     build: ./api-server  # path is relative to docker-compose.yml localtion
+    volumes:
+      - ./api-server:/app
     ports:
       - 5000:80  # host:container   
