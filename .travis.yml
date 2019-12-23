@@ -31,7 +31,7 @@ script:
   - pytest tests/
   - curl http://localhost:5000/json
   - curl http://127.0.0.1:5000/json
-  - docker-compose -f docker-compose.yml logs
+  - docker-compose -f tests/docker-compose.yml logs
 
 
 after_script:
