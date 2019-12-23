@@ -29,8 +29,8 @@ script:
   #- if [[ $TRAVIS_PYTHON_VERSION == '2.7' ]]; then tox -e py27; fi
   #- if [[ $TRAVIS_PYTHON_VERSION == '3.5' ]]; then curl http://localhost; fi
   - pytest tests/
-  - curl http://localhost:5000/json
-  - curl http://127.0.0.1:5000/json
+  - curl http://localhost:80/json
+  - curl http://127.0.0.1:80/json
   - docker-compose -f tests/docker-compose.yml logs
 
 
