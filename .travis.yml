@@ -25,6 +25,7 @@ before_script:
   - docker-compose -f tests/docker-compose.yml build
   - docker-compose -f tests/docker-compose.yml up -d
   - sleep 60
+  - docker-compose -f tests/docker-compose.yml ps
 
 script:
   #- if [[ $TRAVIS_PYTHON_VERSION == '2.7' ]]; then tox -e py27; fi
